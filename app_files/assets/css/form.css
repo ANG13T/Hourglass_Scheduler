@@ -19,3 +19,12 @@ h3{
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+.active .bs-stepper-circle{
+    background-color: rgb(95, 207, 127) !important;
+}
+
+.btn-primary{
+    background-color: rgb(68 136 87) !important;
+    border-color: rgb(68 136 87) !important;
+}
