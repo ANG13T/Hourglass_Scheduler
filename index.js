@@ -18,6 +18,10 @@ res.sendFile(path.join(__dirname+'/app_files/about.html'));
 router.get('/form',function(req,res){
     res.sendFile(path.join(__dirname+'/app_files/form.html'));
 });
+
+router.get('/schedule',function(req,res){
+    res.sendFile(path.join(__dirname+'/app_files/schedule.html'));
+});
   
 //add the router
 app.use('/', router);
