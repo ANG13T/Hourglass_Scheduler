@@ -8,6 +8,11 @@ function getData(){
 }
 
 
+
+// $('#calendar').fullCalendar('removeEvents', function () { return true; });
+  
+
+
 function constructEventData(){
   if(!userData){
     console.log("undefined");
@@ -17,11 +22,11 @@ function constructEventData(){
   let events = [];
   events.push({
     title: "Sleep", 
-    start: moment(userData["startSleep"]),
-    end: moment(addHours(userData["startSleep"], parseInt(userData["amountSleep"]))),
-    dow: [ 1, 4 ]
+    start: new Date().toDateString(),
+    end: moment(new Date()).add(60, 'm').toDate(),
   })
   console.log("events", events);
+  $('#calendar').fullCalendar('addEventSource', events, true);
   return events;
 }
 
