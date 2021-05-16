@@ -148,7 +148,7 @@
                 </div>
               </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
-            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary back" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-3" class="content">
             <h3>What time do you want to go to sleep?</h3>
@@ -166,14 +166,14 @@
                 </div>
               </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
-            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary back" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-4" class="content">
             <h3>How many hours of freetime do you want per day?</h3>
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="amountFreetime">
+                  <input class="form-control"  type="number" value="8"id="amountFreetime">
                 </div>
               </div>
             <h3>How many hours do you want for friends/family/relationships?</h3>
@@ -187,11 +187,11 @@
               <div class="form-group row">
                   <label for="example-time-input" class="col-2 col-form-label">Time</label>
                   <div class="col-10">
-                    <input class="form-control" type="number" value="8" id="startFreetime">
+                    <input class="form-control" type="time" value="17:00:00" id="startFreetime">
                   </div>
                 </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
-            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary back" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-5" class="content">
             <h3>Enter breakfast time (optional)</h3>
@@ -216,7 +216,7 @@
                   </div>
              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
-            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary back" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-6" class="content">
             <h3>How many hours do you want to spend per day?</h3>
@@ -234,7 +234,7 @@
                 </div>
               </div>
             <button class="btn btn-primary" onclick="complete()">Complete!</button>
-            <button class="btn btn-primary" type="submit" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary back" type="submit" onclick="stepper1.previous()">Previous</button>
           </div>
         </div>
         

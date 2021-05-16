@@ -37,4 +37,5 @@ function holdFormData(){
 function postFormData(){
     holdFormData();
     localStorage.setItem("formData", JSON.stringify(formData));
+    window.location.href = window.location.origin + "/schedule";
 }
