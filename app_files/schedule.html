@@ -116,11 +116,54 @@
         center: 'title', //sets the title of the month to center
         left: 'month,basicWeek,basicDay,list' //positions the the prev/next button on the left 
       },
-      defaultDate: "2018-01-01",
+      defaultDate: new Date().toDateString(),
       navLinks: true, // click on day/week names to navigate views
       editable: true,
       eventLimit: true, // add "more" link when there are too many events in a day
-      events: []
+      events: [
+      {
+        title:"Hobby Time",
+        start: '05:30', 
+        end: '06:00', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Breakfast",
+        start: '06:00', 
+        end: '06:30', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Work",
+        start: '07:00', 
+        end: '12:00', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Lunch",
+        start: '12:00', 
+        end: '12:30', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Work",
+        start: '13:00', 
+        end: '18:00', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Freetime",
+        start: '18:30', 
+        end: '19:30', 
+        daysOfWeek: [ '5' ] 
+      },
+      {
+        title:"Dinner",
+        start: '20:00', 
+        end: '20:30', 
+        daysOfWeek: [ '5' ] 
+      }
+      ]
     });
     constructEventData();
   });

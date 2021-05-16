@@ -20,10 +20,15 @@ function constructEventData(){
   }
 
   let events = [];
+  const today = new Date()
+  const tomorrow = new Date(today)
+  tomorrow.setDate(tomorrow.getDate() + 1)
+
   events.push({
-    title: "Sleep", 
-    start: new Date().toDateString(),
-    end: moment(new Date()).add(60, 'm').toDate(),
+    title:"Sleep",
+    start: '22:00', // a start time (10am in this example)
+    end: '29:00', // an end time (2pm in this example)
+    daysOfWeek: [ '5' ] // Repeat monday and thursday
   })
   console.log("events", events);
   $('#calendar').fullCalendar('addEventSource', events, true);
