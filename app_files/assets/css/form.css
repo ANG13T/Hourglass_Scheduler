@@ -6,10 +6,16 @@
     margin: 20px;
 }
 
-.form-input{
-        margin-bottom: 20px;
+.content input{
+        margin-bottom: 40px !important;
+}
+
+.btn{
+    float: right;
 }
 
 h3{
     font-family: "Poppins", sans-serif !important;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
