@@ -262,6 +262,7 @@
   <script src="vendor/aos/aos.js"></script>
 
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="vendor/stepper/stepper.min.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="vendor/purecounter/purecounter.js"></script>
@@ -271,6 +272,7 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 
 
   <script>
@@ -294,12 +296,7 @@
     var stepper4 = new Stepper(document.querySelector('#stepper4'))
 
     function complete(){
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "schedule", true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify({
-            value: "hello!"
-        }));
+        postFormData();
     }
   </script>
 
