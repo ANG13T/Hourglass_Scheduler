@@ -80,38 +80,81 @@
           <div class="step" data-target="#test-l-1">
             <button type="button" class="btn step-trigger">
               <span class="bs-stepper-circle">1</span>
-              <span class="bs-stepper-label">First step</span>
+              <span class="bs-stepper-label">Information</span>
             </button>
           </div>
           <div class="line"></div>
           <div class="step" data-target="#test-l-2">
             <button type="button" class="btn step-trigger">
               <span class="bs-stepper-circle">2</span>
-              <span class="bs-stepper-label">Second step</span>
+              <span class="bs-stepper-label">Work</span>
             </button>
           </div>
           <div class="line"></div>
           <div class="step" data-target="#test-l-3">
             <button type="button" class="btn step-trigger">
               <span class="bs-stepper-circle">3</span>
-              <span class="bs-stepper-label">Third step</span>
+              <span class="bs-stepper-label">Sleep</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#test-l-4">
+            <button type="button" class="btn step-trigger">
+              <span class="bs-stepper-circle">4</span>
+              <span class="bs-stepper-label">Leisure</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#test-l-5">
+            <button type="button" class="btn step-trigger">
+              <span class="bs-stepper-circle">5</span>
+              <span class="bs-stepper-label">Mealtimes</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#test-l-6">
+            <button type="button" class="btn step-trigger">
+              <span class="bs-stepper-circle">6</span>
+              <span class="bs-stepper-label">Hobbies</span>
             </button>
           </div>
         </div>
         <div class="bs-stepper-content">
           <div id="test-l-1" class="content">
-            <p class="text-center">test 1</p>
+            <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required aria-placeholder="John Doe">
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required aria-placeholder="Eg. johndoe@gmail.com">
+              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
           </div>
           <div id="test-l-2" class="content">
             <p class="text-center">test 2</p>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
+            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-3" class="content">
             <p class="text-center">test 3</p>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
+          <div id="test-l-4" class="content">
+            <p class="text-center">test 4</p>
+            <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
+            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+          </div>
+          <div id="test-l-5" class="content">
+            <p class="text-center">test 5</p>
+            <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
+            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+          </div>
+          <div id="test-l-6" class="content">
+            <p class="text-center">test 6</p>
+            <button class="btn btn-primary" onclick="stepper1.next()">Done</button>
+            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+          </div>
+
         </div>
       </div>
 
