@@ -136,7 +136,7 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="09:00:00" id="example-time-input">
+                  <input class="form-control" type="time" value="09:00:00" id="startWork">
                 </div>
               </div>
 
@@ -144,7 +144,7 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                  <input class="form-control" type="time" value="17:00:00" id="endWork">
                 </div>
               </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
@@ -155,14 +155,14 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                  <input class="form-control" type="time" value="17:00:00" id="startSleep">
                 </div>
               </div>
             <h3>How many hours of sleep do you want?</h3>
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="number" value="8">
+                  <input class="form-control" type="number" value="8" id="amountSleep">
                 </div>
               </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
@@ -173,21 +173,21 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                  <input class="form-control" type="time" value="17:00:00" id="amountFreetime">
                 </div>
               </div>
             <h3>How many hours do you want for friends/family/relationships?</h3>
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="number" value="8">
+                  <input class="form-control" type="number" value="8" id="amountRelationshipTime">
                 </div>
               </div>
               <h3>What time are you usually free?</h3>
               <div class="form-group row">
                   <label for="example-time-input" class="col-2 col-form-label">Time</label>
                   <div class="col-10">
-                    <input class="form-control" type="number" value="8">
+                    <input class="form-control" type="number" value="8" id="startFreetime">
                   </div>
                 </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
@@ -198,21 +198,21 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                  <input class="form-control" type="time" value="17:00:00" id="breakfastTime">
                 </div>
               </div>
             <h3>Enter lunch time (optional)</h3>
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="number" value="8">
+                    <input class="form-control" type="time" value="17:00:00" id="lunchTime">
                 </div>
               </div>
               <h3>Enter dinner time (optional)</h3>
               <div class="form-group row">
                   <label for="example-time-input" class="col-2 col-form-label">Time</label>
                   <div class="col-10">
-                    <input class="form-control" type="number" value="8">
+                    <input class="form-control" type="time" value="17:00:00" id="dinnerTime">
                   </div>
              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next Step</button>
@@ -223,14 +223,14 @@
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                    <input class="form-control" type="number" value="8" id="amountHobby">
                 </div>
               </div>
             <h3>What time do you want to work on your hobby?</h3>
             <div class="form-group row">
                 <label for="example-time-input" class="col-2 col-form-label">Time</label>
                 <div class="col-10">
-                  <input class="form-control" type="number" value="8">
+                    <input class="form-control" type="time" value="17:00:00" id="startHobby">
                 </div>
               </div>
             <button class="btn btn-primary" onclick="complete()">Complete!</button>
