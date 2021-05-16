@@ -107,7 +107,9 @@
   <!-- <script src="js/schedule.js"></script> -->
   <script type="text/javascript">
     $(document).ready(function() {
-
+    getData();
+    let eventList = constructEventData();
+    console.log("got the events", eventList)
     $('#calendar').fullCalendar({
       initialView: 'timeGridDay',
       header: {
@@ -119,34 +121,13 @@
       navLinks: true, // click on day/week names to navigate views
       editable: true,
       eventLimit: true, // add "more" link when there are too many events in a day
-      events: [
-        {
-          title: 'Create 2 Post on Steemit', // title of an event
-          start: '2018-02-05' // date of an event
-        },
-        {
-          title: 'Attend Steemit Meetup',
-          start: '2018-02-07T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-02-07T16:00:00'
-        },   
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-02-14T16:00:00'
-        },     
-        {
-          title: 'Visit Utopian-io',
-          url: 'http://utopian.io/',
-          start: '2018-02-20'
-        }
-      ]
+      events: []
     });
 
-    });
+    setTimeout(function() {
+    $('#calendar').fullCalendar('addEventSource', eventList[0]);
+  }, 2000);
+  });
   </script>
 
 </body>
