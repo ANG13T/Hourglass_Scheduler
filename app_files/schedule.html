@@ -103,17 +103,19 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script src="js/schedule.js"></script>
   <!-- <script src="js/schedule.js"></script> -->
   <script type="text/javascript">
     $(document).ready(function() {
 
     $('#calendar').fullCalendar({
+      initialView: 'timeGridDay',
       header: {
         right: 'prev,next today', //positions the the prev/next button on the right 
         center: 'title', //sets the title of the month to center
         left: 'month,basicWeek,basicDay,list' //positions the the prev/next button on the left 
       },
-      defaultDate: '2018-02-16',
+      defaultDate: new Date().toDateString(),
       navLinks: true, // click on day/week names to navigate views
       editable: true,
       eventLimit: true, // add "more" link when there are too many events in a day
@@ -144,7 +146,7 @@
       ]
     });
 
-  });
+    });
   </script>
 
 </body>
