@@ -234,10 +234,9 @@
                   <input class="form-control" type="number" value="8">
                 </div>
               </div>
-            <button class="btn btn-primary" onclick="stepper1.next()">Complete!</button>
-            <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+            <button class="btn btn-primary" onclick="complete()">Complete!</button>
+            <button class="btn btn-primary" type="submit" onclick="stepper1.previous()">Previous</button>
           </div>
-
         </div>
         
       </div>
@@ -294,6 +293,15 @@
       animation: true
     })
     var stepper4 = new Stepper(document.querySelector('#stepper4'))
+
+    function complete(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "schedule", true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            value: "hello!"
+        }));
+    }
   </script>
 
 </body>
