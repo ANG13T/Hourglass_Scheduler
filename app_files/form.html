@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
 
     <!-- Stepper CSS - minified-->
     <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
@@ -55,7 +56,7 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main" class="form-content">
 
     <!-- ======= Breadcrumbs ======= -->
     <!-- <div class="breadcrumbs" data-aos="fade-in">
@@ -75,7 +76,7 @@
     </section><!-- End Contact Section -->
 
       
-    <div id="stepper1" class="bs-stepper">
+    <div id="stepper1" class="bs-stepper form-internal">
         <div class="bs-stepper-header">
           <div class="step" data-target="#test-l-1">
             <button type="button" class="btn step-trigger">
@@ -122,35 +123,117 @@
         <div class="bs-stepper-content">
           <div id="test-l-1" class="content">
             <div class="col-md-6 form-group">
+                <h3>Enter Full Name: </h3>
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required aria-placeholder="John Doe">
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
+                <h3>Enter Email Address: </h3>
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required aria-placeholder="Eg. johndoe@gmail.com">
               </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
           </div>
           <div id="test-l-2" class="content">
-            <p class="text-center">test 2</p>
+            <h3>What time do you start work?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="09:00:00" id="example-time-input">
+                </div>
+              </div>
+
+              <h3>What time do you end work?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                </div>
+              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-3" class="content">
-            <p class="text-center">test 3</p>
+            <h3>What time do you want to go to sleep?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                </div>
+              </div>
+            <h3>How many hours of sleep do you want?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="number" value="8">
+                </div>
+              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-4" class="content">
-            <p class="text-center">test 4</p>
+            <h3>How many hours of freetime do you want per day?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                </div>
+              </div>
+            <h3>How many hours do you want for friends/family/relationships?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="number" value="8">
+                </div>
+              </div>
+              <h3>What time are you usually free?</h3>
+              <div class="form-group row">
+                  <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                  <div class="col-10">
+                    <input class="form-control" type="number" value="8">
+                  </div>
+                </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-5" class="content">
-            <p class="text-center">test 5</p>
+            <h3>Enter breakfast time (optional)</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                </div>
+              </div>
+            <h3>Enter lunch time (optional)</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="number" value="8">
+                </div>
+              </div>
+              <h3>Enter dinner time (optional)</h3>
+              <div class="form-group row">
+                  <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                  <div class="col-10">
+                    <input class="form-control" type="number" value="8">
+                  </div>
+             </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
           <div id="test-l-6" class="content">
-            <p class="text-center">test 6</p>
+            <h3>How many hours do you want to spend per day?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="17:00:00" id="example-time-input">
+                </div>
+              </div>
+            <h3>What time do you want to work on your hobby?</h3>
+            <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="number" value="8">
+                </div>
+              </div>
             <button class="btn btn-primary" onclick="stepper1.next()">Done</button>
             <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
           </div>
@@ -161,7 +244,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="custom-footer">
 
     <div class="container d-md-flex py-4">
 

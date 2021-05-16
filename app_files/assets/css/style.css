@@ -1411,6 +1411,12 @@ section {
   color: #777777;
 }
 
+.custom-footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
