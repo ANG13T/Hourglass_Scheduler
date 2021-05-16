@@ -107,22 +107,6 @@
   <!-- <script src="js/schedule.js"></script> -->
   <script type="text/javascript">
 
-let myEvents = [{
-    title: 'event1',
-    start: '2018-01-01'
-  },
-  {
-    title: 'event2',
-    start: '2018-01-05',
-    end: '2018-01-07'
-  },
-  {
-    title: 'event3',
-    start: '2018-01-09T12:30:00',
-    allDay: false // will make the time show
-  }
-];
-
     $(document).ready(function() {
     getData();
     $('#calendar').fullCalendar({
@@ -136,21 +120,7 @@ let myEvents = [{
       navLinks: true, // click on day/week names to navigate views
       editable: true,
       eventLimit: true, // add "more" link when there are too many events in a day
-      events: [{
-    title: 'event1',
-    start: '2018-01-01'
-  },
-  {
-    title: 'event2',
-    start: '2018-01-05',
-    end: '2018-01-07'
-  },
-  {
-    title: 'event3',
-    start: '2018-01-09T12:30:00',
-    allDay: false // will make the time show
-  }
-]
+      events: []
     });
     constructEventData();
   });
