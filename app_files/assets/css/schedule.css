@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
     font-size: 14px;
+    height: 100%; 
+    margin: 0;
   }
   
   #external-events {
@@ -28,6 +30,11 @@ html, body {
   }
   
   #calendar {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 850px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #main{
+      margin-top: 4rem !important;
   }

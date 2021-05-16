@@ -19,6 +19,8 @@
   <!-- Vendor CSS Files -->
   <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.css' rel='stylesheet' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.print.css' media='print' />
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -27,7 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/form.css" rel="stylesheet">
+  <link href="css/schedule.css" rel="stylesheet">
 
     <!-- Stepper CSS - minified-->
     <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
@@ -71,20 +73,6 @@
     <section id="contact" class="contact">
 
       <div class="container">
-        <div id='external-events'>
-            <p>
-              <strong>Draggable Events</strong>
-            </p>
-            <div class='fc-event'>My Event 1</div>
-            <div class='fc-event'>My Event 2</div>
-            <div class='fc-event'>My Event 3</div>
-            <div class='fc-event'>My Event 4</div>
-            <div class='fc-event'>My Event 5</div>
-            <p>
-              <input type='checkbox' id='drop-remove' />
-              <label for='drop-remove'>remove after drop</label>
-            </p>
-          </div>
           
           <div id='calendar-container'>
             <div id='calendar'></div>
@@ -95,24 +83,17 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="custom-footer">
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Hourglass</span></strong>. All Rights Reserved
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="vendor/aos/aos.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js'></script>
+
 
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -123,6 +104,49 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <!-- <script src="js/schedule.js"></script> -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        right: 'prev,next today', //positions the the prev/next button on the right 
+        center: 'title', //sets the title of the month to center
+        left: 'month,basicWeek,basicDay,list' //positions the the prev/next button on the left 
+      },
+      defaultDate: '2018-02-16',
+      navLinks: true, // click on day/week names to navigate views
+      editable: true,
+      eventLimit: true, // add "more" link when there are too many events in a day
+      events: [
+        {
+          title: 'Create 2 Post on Steemit', // title of an event
+          start: '2018-02-05' // date of an event
+        },
+        {
+          title: 'Attend Steemit Meetup',
+          start: '2018-02-07T16:00:00'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-02-07T16:00:00'
+        },   
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-02-14T16:00:00'
+        },     
+        {
+          title: 'Visit Utopian-io',
+          url: 'http://utopian.io/',
+          start: '2018-02-20'
+        }
+      ]
+    });
+
+  });
+  </script>
 
 </body>
 
